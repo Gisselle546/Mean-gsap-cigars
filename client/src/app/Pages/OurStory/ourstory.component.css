@@ -1,0 +1,76 @@
+.headercontainer{
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    height:30vh;
+    background:linear-gradient(to right bottom,rgba(250, 227, 182, 0.8),rgba(0,0,0, 100)),url(../../../assets/Image/ourstoryname.png);
+    margin-top: -1rem;
+    
+}
+
+.boxheader{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 30%;
+    background-color: #fff;
+    margin-top: -3rem;
+    
+}
+
+.ourstoryhead{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.para{
+    color:orangered;
+    font-size: 1.2rem;
+}
+
+
+.threeimage{
+    display:flex;
+    align-items: center;
+    margin-left: 2rem;
+    width:40%; 
+    height:100%;
+    position:relative;
+}
+
+.threeimage img{
+    width:30%;
+  position: absolute;
+  transition: all .2s;
+  outline-offset: 10px
+
+}
+
+
+.threeimage img:hover{
+    transform:scale(1.10);
+    z-index: 10;
+    outline: 2px solid #ab0000;
+  }
+  
+
+.image_01{
+    left:14rem;
+    top:2.4rem;
+  
+  }
+  
+  
+  .image_02{
+    left:0;
+    top:2.4rem;
+  
+  }
+  
+   
+  .image_03{
+    left:5rem;
+    top:11rem;
+  
+  }
+  

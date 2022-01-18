@@ -1,0 +1,114 @@
+.homebrands{
+    height:28rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.list_container{
+    display:flex;
+   
+
+}
+
+.list_items{
+    list-style-type: none;
+    display:flex;
+    width: 100%;
+    
+}
+
+
+.header{
+    color:#000;
+    font-size: 2.6rem;
+    margin-top: 2.6rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list{
+    width:100%;
+    margin-right: 1.4rem;
+    cursor:pointer;
+    
+  
+}
+
+.example-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#fae3b6;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 900px) {
+   
+    .homebrands{
+        height:19rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+    }
+    
+   
+   
+   ul{
+       padding:0px;
+       margin: 0px;
+       height:7rem;
+   }
+   
+   
+    .list_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+.list_items{
+    
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.list{
+    width:100%;
+    margin-right: 5rem;
+    cursor:pointer;
+    
+  
+}
+
+.header{
+    color:#000;
+    font-size: 2.2rem;
+    margin-top: 1.6rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+}
+ 

@@ -1,0 +1,25 @@
+    <div class="dialogdf">
+        <mat-dialog-content >
+            <div class="container">
+                <div class="imgcontain">
+                    <img class="logo" src="../../../assets/Image/AganorsaLogo.png"/>
+                </div>
+            </div>
+        </mat-dialog-content>
+        <div>
+           <h1 class="header"> Are you over 21?</h1>
+        </div>
+  </div>
+
+  
+        <mat-dialog-actions>
+            <div class="buttonContain" *ngIf="!overtwentyone; else showThis">
+                <button mat-raised-button [mat-dialog-close]="true" (click)="yesDialog()" style="width:100%;padding:1rem; background-color: #fff; color:#000">Yes</button>
+                <button mat-raised-button  (click)="noOpen()" style="width:100%; padding:1rem; background-color: #fff; color:#000">No</button>
+            </div>
+            <ng-template #showThis>      
+                <div style="display:flex; justify-content: center; width:100%">
+                    <h2 class="negativeheader">Sorry Come Back When you're 21!</h2>
+                </div>
+            </ng-template>
+        </mat-dialog-actions>

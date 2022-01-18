@@ -1,0 +1,17 @@
+<div class="cigarcontainer">
+  
+    <mat-grid-list cols="3" rowHeight="550px">
+        <mat-grid-tile *ngFor="let product of products" style="text-align: center;">
+         
+          <mat-card [routerLink]="['/cigars/', product.slug]">
+            <mat-card-title>{{product.name}}</mat-card-title>
+            <mat-card-content>
+                <img src="{{product.images[0]}}" height=300px width=300px style="border-radius: 50px;"/>
+               <h3 style="color:#E50000; font-weight:700; font-size: 1.2rem;" >{{product.brand.name | uppercase }}</h3>
+            </mat-card-content>
+          </mat-card> 
+         
+        </mat-grid-tile>
+      </mat-grid-list> 
+   
+</div>

@@ -1,0 +1,37 @@
+<div class="detailscontainer" *ngIf="currentproduct">
+    <div class="detailsgrid">
+        <div class="left">
+          <img src="{{currentproduct?.images[0]}}" height="440px" width="440px"/>
+            
+        
+        </div>
+
+        <div class="right" >
+            
+           <h1 style="font-size: 2.4rem; color:#fff">{{currentproduct.name}}</h1>
+           <p style="font-size: 1rem; color:#fff; height:6rem;">{{currentproduct.description}} {{currentproduct?.decription}}</p>
+           <h2 style="font-size: 1.9rem; color: #fff">Strength </h2><mat-progress-bar 
+           color="warn" mode="determinate" style="width:50%;"  value="{{currentproduct.strength}}"></mat-progress-bar>
+           <div class="details">
+           <h1 style="margin-top: 3rem; display:flex; justify-content: flex-start; color:#fff;">Sizes Available</h1>
+
+           <div style="border:2px solid red; display: flex; flex-direction: column; justify-content: flex-start; width:70%; ">
+            <ul *ngFor="let product of currentproduct.size" >
+              
+              <div class="listitems">
+                <li style="color: #fff; font-size: 1.2rem;"> {{product.name}} </li> <li style="color: #fff; font-size: 1rem;"> {{product.measure}}</li>
+              </div>
+            </ul>
+          </div>
+
+          
+           </div>
+
+          </div>
+
+        
+
+
+    </div>
+
+</div>

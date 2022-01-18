@@ -1,0 +1,120 @@
+.landing{
+    background:url(../../../../assets/Image/LandingPage.jpeg) left/cover;
+    margin-top: -3rem;
+    height:100vh;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    position:relative;
+}
+
+
+.headercontainer{
+    display:flex;
+    height:50%;
+    margin-top: 5rem;
+    justify-content: center;
+    width:50%;
+    align-content: flex-end;
+   
+}
+
+
+.cigarcontainer{
+    
+    background: linear-gradient(to bottom right,#e50000 , #000000);
+    margin-top: 6rem;
+    height:50%;
+    width:30%;
+    right:1%;
+    bottom:2%;
+    position:absolute;
+}
+
+.cigarimage{
+    display: flex;
+    justify-content: flex-end;
+    height:85%;
+    width:100%;
+}
+
+.header{
+    color:#fff;
+    font-size: 2.9rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.button {
+    background-color: #000; 
+    border-radius: 100px;
+    border: none;
+    color: #D4AF37;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+
+
+  @media only screen and (min-device-width : 375px) and (max-device-width : 900px) {
+    .landing{
+        background:url(../../../../assets/Image/LandingPage.jpeg) top center/cover;
+        width:100%;
+    }
+    
+    .headercontainer{
+        display:flex;
+        height:50%;
+        margin-top: 4rem;
+        justify-content: center;
+        width:50%;
+        align-content: flex-end;
+       
+    }
+
+    .header{
+        font-size: 2.2rem;
+        margin-left: 1rem;
+    }
+
+
+
+    .cigarcontainer{
+    
+        background: linear-gradient(to bottom right,#e50000 , #000000);
+        margin-top: 6rem;
+        height:40%;
+        width:69%;
+        right:1%;
+        bottom:2%;
+        position:absolute;
+    }
+    
+    .cigarimage{
+        display: flex;
+        justify-content: flex-end;
+        height:58%;
+        width:69%;
+        margin-left: 10px;
+    }
+
+
+
+    .buttoncontainer{
+        margin:0px;
+    }
+
+
+    .button{
+        margin-top: 2rem;
+    }
+
+
+}
+ 

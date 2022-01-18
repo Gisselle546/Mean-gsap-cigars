@@ -1,0 +1,20 @@
+<h2 class="header">Aganorsa Brands</h2>
+<div class="homebrands">
+    <div class="list_container">
+        <ul class="list_items">
+            <li *ngFor="let product of products; let i = index" class="list">
+                <mat-card class="card">
+                    <mat-card-title-group  class="example-card">
+                      <mat-card-title style="color:#E50000">{{product.name}}</mat-card-title>
+                     
+                      <img mat-card-lg-image src="{{product.images[0]}}" >
+                    </mat-card-title-group>
+                    <mat-card-content style="text-align: center; color:#E50000">
+                      {{product.brand.name| uppercase}}
+                    </mat-card-content>
+                  </mat-card>
+            </li>
+        </ul>
+    </div>
+    
+</div>
